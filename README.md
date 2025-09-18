@@ -51,6 +51,24 @@ def score(solution, submission, row_id_column_name):
 
 ## 🚀 Quick Start
 
+### Option 1: Docker (Recommended)
+
+**Requirements**: Docker
+
+1. **Build the Docker image**:
+   ```bash
+   docker build -t german-credit-analysis .
+   ```
+
+2. **Run the container**:
+   ```bash
+   docker run -p 8501:8501 german-credit-analysis
+   ```
+
+3. **Open your browser** to `http://localhost:8501`
+
+### Option 2: Local Python Setup
+
 **Requirements**: Python 3.10.*
 
 1. **Install dependencies**:
@@ -65,7 +83,31 @@ def score(solution, submission, row_id_column_name):
 
 3. **Open your browser** to `http://localhost:8501`
 
+### Generate Predictions
+
 4. **Generate Kaggle predictions**: Click one button to predict the predefined test data from the Kaggle competition and download results!
+
+## 🐳 Docker Commands
+
+```bash
+# Build the Docker image
+docker build -t german-credit-analysis .
+
+# Run the container
+docker run -p 8501:8501 german-credit-analysis
+
+# Run in background (detached mode)
+docker run -d -p 8501:8501 --name credit-analysis german-credit-analysis
+
+# Stop the container
+docker stop credit-analysis
+
+# Remove the container
+docker rm credit-analysis
+
+# View logs
+docker logs credit-analysis
+```
 
 ## 📊 Models
 
