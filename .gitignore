@@ -1,0 +1,13 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Pytest cache
+.pytest_cache/
+
+# Data files
+# Keep the main CSVs you already committed
+data/*
+!data/german_credit_train.csv
+!data/german_credit_test.csv
+!data/german_credit_test_submission.csv
