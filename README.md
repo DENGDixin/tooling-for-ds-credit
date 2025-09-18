@@ -87,27 +87,6 @@ def score(solution, submission, row_id_column_name):
 
 4. **Generate Kaggle predictions**: Click one button to predict the predefined test data from the Kaggle competition and download results!
 
-## 🐳 Docker Commands
-
-```bash
-# Build the Docker image
-docker build -t german-credit-analysis .
-
-# Run the container
-docker run -p 8501:8501 german-credit-analysis
-
-# Run in background (detached mode)
-docker run -d -p 8501:8501 --name credit-analysis german-credit-analysis
-
-# Stop the container
-docker stop credit-analysis
-
-# Remove the container
-docker rm credit-analysis
-
-# View logs
-docker logs credit-analysis
-```
 
 ## 📊 Models
 
